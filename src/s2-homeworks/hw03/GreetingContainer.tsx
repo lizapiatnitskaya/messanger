@@ -40,7 +40,7 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({
 }) => {
     // деструктуризация пропсов
     const [name, setName] = useState('') // need to fix any
-    const [error, setError] = useState('') // need to fix any
+    const [error, setError] = useState<string|null>('') // need to fix any
 
     const setNameCallback = (e: ChangeEvent<HTMLInputElement>) => { // need to fix any
         setName(e.currentTarget.value) // need to fix
